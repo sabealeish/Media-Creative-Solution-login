@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Creative Solution login</title>
+    <!-- link css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="css/fontawesome-free-6.1.0-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/media-query.css">
+  </head>
+  <body>
+
+    <div class="ovlay"></div>
+    <div class="poup">
+        <div class="close">
+            <i class="fa-solid fa-xmark" onclick="clospoup()"></i>
+        </div>
+<br>
+        <h2>الرجاء ادخال الرمز للمتابعة</h2>
+        <p>لقد أرسلنا رمز التحقق برسالة نصية الى <span>+96612356577</span></p>
+        <br>
+        <label for="">رمز التحقق :</label>
+   <br><br>
+        <form>
+            <input type="number" value="5">
+            <input type="number" value="5">
+            <input type="number" value="5">
+            <input type="number" value="5">
+        </form>
+        <br><br><br>
+        <span class="timer">00 : 59 sec</span>
+    <br><br>
+        <a>إعادة إرسال الكود</a>
+         <br><br>
+         <button onclick="poup2()">تحقق</button>
+
+    </div>
+  <div class="poup2">
+    <div class="close">
+      <i class="fa-solid fa-xmark" onclick="clospoup2()"></i>
+  </div>
+    <img src="img/check (2).png" alt="">
+    <br><br><br>
+    <h2>تم اضافة حسابك جديد</h2>
+    <br>
+    <p>تم انشاء حساب جديد يرجى الانتظار ليتم مراجعته</p>
+    <br><br>
+    <button onclick="clospoup2()">هيا نبدأ</button>
+  </div>
+    <div class="continer new-acount">
+      <div class="form">
+        <h1>
+          <a href="#" class="login">
+            <i class="fa-solid fa-arrow-left"></i> تسجيل دخول
+          </a>
+        </h1>
+        <h2>سجل حساب جديد</h2>
+        <p class="text-ca">اختر نوع حسابك</p>
+        <br />
+        <ul class="navation">
+          <li onclick="pag1()">المحطات التلفزيونية</li>
+          <li onclick="pag2()">الخبراء المتحدثون</li>
+          <li onclick="pag3()" >مزودي الخدمات</li>
+          <li class="nav-active" onclick="pag4()">المستقلين</li>
+        </ul>
+        <div class="nav-num">
+          <div class="active">
+            <span>1</span>
+            <br />
+            <p class="p-active">بيانات المستقل</p>
+          </div>
+          <div>
+            <span>2</span> <br />
+            <p class="p-none-active">المراسلات السابقة</p>
+          </div>
+          <div>
+            <span>3</span> <br />
+            <p class="p-none-active">معلومات التواصل</p>
+          </div>
+          <div>
+            <span>4</span> <br />
+            <p class="p-none-active">العنوان</p>
+          </div>
+
+          <div>
+            <span>5</span> <br />
+            <p class="p-none-active">المعلومات المالية</p>
+          </div>
+        </div>
+        <div class="TV">
+          <div class="TV1 TVCh avtivetv">
+            <form action="">
+              <div class="helf-main">
+                <div class="helf-input No-arrow">
+                  <label for=""> <span>*</span>الاسم الاخير </label>
+                  <div class="input-icon">
+                    <input type="text" placeholder="احمد" />
+                    <i class="fa-solid fa-user"></i>
+                  </div>
+                </div>
+
+                <div class="helf-input">
+                  <label for=""> <span>*</span>الاسم الاول </label>
+                  <div class="input-icon">
+                    <input type="text" placeholder="محمد" />
+                    <i class="fa-solid fa-user"></i>
+                  </div>
+                </div>
+              </div>
+              <br />
+              <label for=""> <span>*</span> الجنسية</label>
+
+              <div class="input-icon ar-dw">
+                <select name="" id="">
+                  <option placeholder="">فلسطيني</option>
+                </select>
+                <i class="fa-solid fa-chevron-up fa-rotate-180"></i>
+              </div>
+              <br />
+              <label for=""> <span>*</span> اللغات الي يمكن التحدث بها</label>
+
+              <div class="input-icon ar-dw">
+                <select name="" id="">
+                  <option placeholder="">اختر اللغة</option>
+                </select>
+                <i class="fa-solid fa-chevron-up fa-rotate-180"></i>
+                
+              </div>
+              <div class="hardware">
+                <div>
+                  <span><i class="fa-solid fa-xmark"></i> الانجليزية</span>
+                </div>
+              </div>
+
+              <br />
+              <label for=""> <span>*</span>صورة شخصية </label>
+              <div class="input-icon inputfile">
+                <input type="file" placeholder="لم تقم باختيار ملف" />
+                <span class="file-img">
+                  <span>رفع ملف</span>
+                  <span>لم تقم باختيار ملف</span>
+                </span>
+              </div>
+
+              <br />
+              <label for=""> <span>*</span> صورة جواز السفر </label>
+              <div class="input-icon inputfile">
+                <input type="file" placeholder="لم تقم باختيار ملف" />
+                <span class="file-img">
+                  <span>رفع ملف</span>
+                  <span>لم تقم باختيار ملف</span>
+                </span>
+              </div>
+
+              <br />
+              <label for=""> <span>*</span> السيرة الذاتية </label>
+              <div class="input-icon inputfile">
+                <input type="file" placeholder="لم تقم باختيار ملف" />
+                <span class="file-img">
+                  <span>رفع ملف</span>
+                  <span>لم تقم باختيار ملف</span>
+                </span>
+              </div>
+            </form>
+            <div class="main-btn">
+              <button>السابق</button>
+              <button onclick="TV2()">التالي</button>
+            </div>
+          </div>
+          <div class="TV2 TVCh">
+            <form action="">
+              <button class="btn-new">
+                رابط المراسلات السابقة <i class="fa-solid fa-plus"></i>
+              </button>
+              <br />
+              <br /><br />
+
+              <br /><br />
+
+              <label for=""> <span>*</span> رابط المراسلة </label>
+              <div class="input-icon">
+                <input
+                  type="text"
+                  placeholder="https://www.facebook.com/thawartshad/"
+                />
+                <i class="fa-solid fa-desktop"></i>
+              </div>
+              <br />
+
+              <label for=""> <span>*</span> رابط المراسلة </label>
+              <div class="input-icon">
+                <input
+                  type="text"
+                  placeholder="https://www.facebook.com/thawartshad/"
+                />
+                <i class="fa-solid fa-desktop"></i>
+              </div>
+              <br />
+
+              <label for=""> <span>*</span> رابط المراسلة </label>
+              <div class="input-icon">
+                <input
+                  type="text"
+                  placeholder="https://www.facebook.com/thawartshad/"
+                />
+                <i class="fa-solid fa-desktop"></i>
+              </div>
+
+              <br />
+
+              <label for=""> <span>*</span> رابط المراسلة </label>
+              <div class="input-icon">
+                <input
+                  type="text"
+                  placeholder="https://www.facebook.com/thawartshad/"
+                />
+                <i class="fa-solid fa-desktop"></i>
+              </div>
+
+              <br />
+              <label for=""> <span>*</span> المعدات </label>
+              <div class="input-icon">
+                <input id="input-icon" type="text" placeholder="اكتب معدات تستخدمها" />
+                <br>
+
+                <div class="hardware">
+                  <div>
+                    <span><i class="fa-solid fa-xmark"></i> كروما</span>
+                  </div>
+                  <div>
+                    <span><i class="fa-solid fa-xmark"></i> كاميرا</span>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div class="main-btn">
+              <button onclick="TV1()">السابق</button>
+              <button onclick="TV3()">التالي</button>
+            </div>
+          </div>
+
+          <div class="TV3 TVCh">
+            <form action="">
+                <label for=""> <span>*</span> البريد الالكتروني </label>
+                <div class="input-icon">
+                  <input
+                    type="text"
+                    placeholder="Shimaazakarya@gmail.com"
+                  />
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <br />
+                <div class="input-select">
+                  <br />
+                  <label for=""> <span>*</span> رقم الجوال </label>
+                  <div class="code-cn">
+                    <div class="input-icon">
+                
+                        <input class="inp-num" type="number" name="" id="" placeholder="0595935907">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="dropdown" tab-index="0">
+                        <button id="dropdown-btn"></button>
+                        <ul class="dropdown-content" id="dropdown-content"></ul>
+                      </div>
+                </div>
+                </div>
+                <br />
+                <h2>السوشيال ميديا</h2>     
+        
+                <label for=""> <span>*</span>  facebook </label>
+                <div class="input-icon">
+                
+                    <input type="text" placeholder="https://www.facebook.com/thawartshad/"> 
+                    <i class="fa-brands fa-facebook-f"></i>
+                </div>
+                       
+                <br>
+                       
+                <label for=""> <span>*</span>  instagram </label>
+                <div class="input-icon">
+                
+                    <input type="text" placeholder="https://www.facebook.com/thawartshad/"> 
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                       
+                <br>
+                       
+                <label for=""> <span>*</span> linkedin </label>
+                <div class="input-icon">
+                
+                  <input type="text" placeholder="https://www.facebook.com/thawartshad/"> 
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+                       
+                <br>
+                       
+                <label for=""> <span>*</span> twitter </label>
+                <div class="input-icon">
+                
+                  <input type="text" placeholder="https://www.facebook.com/thawartshad/"> 
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+                       
+                <br>
+            
+                <label for=""> <span>*</span> snapchat </label>
+                <div class="input-icon">
+                
+                  <input type="text" placeholder="https://www.facebook.com/thawartshad/"> 
+                  <i class="fa-brands fa-snapchat"></i>
+                </div>
+                       
+                <br>
+            
+                <label for=""> <span>*</span> tiktok </label>
+                <div class="input-icon">
+                
+                  <input type="text" placeholder="https://www.facebook.com/thawartshad/"> 
+                  <i class="fa-brands fa-tiktok"></i>
+                </div>
+                       
+                <br>
+                       
+                <label for=""> <span>*</span> الموقع الخاص بالقناة </label>
+                <div class="input-icon">
+                
+                  <input type="text" placeholder="https://www.facebook.com/thawartshad/">  
+                  <i class="fa-solid fa-globe"></i>
+                </div>
+  
+              </form>
+            <div class="main-btn">
+              <button onclick="TV2()">السابق</button>
+              <button onclick="TV4()">التالي</button>
+            </div>
+          </div>
+
+          <div class="TV4 TVCh">
+            <form action="">
+                <label for=""> <span>*</span> رقم المبنى  </label>
+                <div class="input-icon">
+                
+                  <input id="input-icon" type="text" placeholder="345"> 
+                </div>
+                <br>
+                <label for=""> <span>*</span>  الشارع </label>
+                <div class="input-icon">
+                
+                  <input id="input-icon" type="text" placeholder="شارع 6"> 
+                </div>
+                <br>
+             <label for=""> <span>*</span> المدينة  </label>
+             <div class="input-icon ar-dw">
+             
+                <select name="" id="">
+                    <option placeholder="">القدس</option>
+                  </select>
+                  <i class="fa-solid fa-chevron-up fa-rotate-180"></i>
+             </div>
+      <br>
+             
+      <label for=""> <span>*</span> الدولة</label>
+      <div class="input-icon ar-dw">
+      
+         <select name="" id="">
+             <option placeholder="">فلسطين</option>
+           </select>
+           <i class="fa-solid fa-chevron-up fa-rotate-180"></i>
+      </div>
+     <br>
+     
+             
+      <label for=""> <span>*</span> الرمز البريدي ( (zip code - post code </label>
+      <div class="input-icon">
+      
+        <input id="input-icon" type="number" placeholder="345"> 
+      </div>
+      <br>
+      
+      
+             
+      <label for=""> <span>*</span> العنوان </label>
+      <div class="input-icon">
+      
+          <textarea name="" id="" cols="30" rows="10" placeholder="بالقرب من مسجد الفرقان" va></textarea>
+      </div>
+             
+            </form>
+            <div class="main-btn">
+              <button style="font-size: 13px" onclick="TV3()">السابق</button>
+              <button style="font-size: 13px" onclick="TV5()">التالي</button>
+            </div>
+          </div>
+
+          <div class="TV5 TVCh">
+            <form action="">
+                <label for=""> <span>*</span> اسم البنك </label>
+                <div class="input-icon ar-dw">
+                  <select name="" id="">
+                    <option placeholder="">بنك فلسطين</option>
+                  </select>
+                  <i class="fa-solid fa-chevron-up fa-rotate-180"></i>
+                </div>
+                <br />
+  
+                <label for=""> <span>*</span> رقم IBAN </label>
+                <div class="input-icon ar-dw">
+                  <select name="" id="">
+                    <option placeholder="">القدس</option>
+                  </select>
+                  <i class="fa-solid fa-chevron-up fa-rotate-180"></i>
+                </div>
+                <br />
+                <label for=""> <span>*</span> Swift Code </label>
+                <div class="input-icon">
+                  <input id="input-icon" type="number" placeholder="976654" />
+                </div>
+                <br />
+  
+                <label for=""> <span>*</span> Account number </label>
+                <div class="input-icon">
+                  <input id="input-icon" type="number" placeholder="976654" />
+                </div>
+                <br />
+  
+                <label for=""> <span>*</span> Sort code </label>
+                <div class="input-icon">
+                  <input id="input-icon" type="number" placeholder="976654" />
+                </div>
+  
+                <br />
+  
+                <label for=""> <span>*</span> Routing number </label>
+                <div class="input-icon">
+                  <input id="input-icon" type="number" placeholder="976654" />
+                </div>
+  
+                <br />
+  
+                <label for=""> <span>*</span> العملة </label>
+                <div class="input-icon ar-dw">
+                  <select name="" id="">
+                    <option placeholder="">اليورو</option>
+                  </select>
+                  <i class="fa-solid fa-chevron-up fa-rotate-180"></i>
+                </div>
+  
+                <br />
+  
+                <label for=""> <span>*</span> كيف عرفت عنا </label>
+                <div class="input-icon">
+                  <textarea
+                    name=""
+                    id=""
+                    cols="30"
+                    rows="10"
+                    placeholder="بالقرب من مسجد الفرقان"
+                    va
+                  ></textarea>
+                </div>
+              </form>
+            <div class="main-btn">
+              <button style="font-size: 13px" onclick="TV4()">السابق</button>
+              <button style="font-size: 13px" onclick="poup()">سجل حساب جديد</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about">
+        <div class="about-content">
+          <img src="img/Group 29080.png" alt="" />
+          <h2>Media Creative Solution</h2>
+          <p>
+            الفقرات في الصفحة التي يقرأها هناك حقيقة مثبتة منذ زمن طويل وهي أن
+            عنةتتلاررر توضع
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

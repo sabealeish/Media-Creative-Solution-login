@@ -1,0 +1,22 @@
+@media (min-device-width: 768px) and (max-device-width: 1200px ) {
+    
+    .about{
+        height: 100vh;
+    }
+
+    .navation{
+        display: flex;
+    }
+
+    .navation li{
+        margin: 5px;
+    }
+
+    form button, .main-btn button, .poup button, .poup2 button{
+        padding: 14PX 20px;
+    }
+
+    .btn-new{
+        margin-right: 4%;
+    }
+}
